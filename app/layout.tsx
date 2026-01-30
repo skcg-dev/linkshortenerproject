@@ -32,7 +32,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: undefined,
+        variables: {
+          colorPrimary: "hsl(var(--primary))",
+          colorBackground: "hsl(var(--background))",
+          colorInputBackground: "hsl(var(--background))",
+          colorInputText: "hsl(var(--foreground))",
+          colorText: "hsl(var(--foreground))",
+          colorTextSecondary: "hsl(var(--muted-foreground))",
+          colorDanger: "hsl(var(--destructive))",
+          colorSuccess: "hsl(142 76% 36%)",
+          colorWarning: "hsl(38 92% 50%)",
+          borderRadius: "var(--radius)",
+        },
+        elements: {
+          card: "shadow-none",
+          rootBox: "w-full",
+          cardBox: "w-full max-w-md",
+        },
+      }}
+    >
       <html lang="en" className="dark">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
