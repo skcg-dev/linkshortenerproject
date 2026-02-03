@@ -28,6 +28,14 @@ This is not optional. Each documentation file contains essential patterns, conve
 
 ## Core Principles
 
+### ⚠️ IMPORTANT: Routing & Middleware
+
+**NEVER use `middleware.ts` in this project.** The traditional Next.js middleware pattern is deprecated in Next.js 16 and later versions. Instead, use `proxy.ts` for routing and middleware functionality.
+
+- ❌ **DO NOT** create or use `middleware.ts`
+- ✅ **DO** use `proxy.ts` for request handling and routing logic
+- This is a critical architectural decision for Next.js 16 compatibility
+
 ### 1. Type Safety First
 - Always use TypeScript with strict mode enabled
 - Avoid `any` types - use `unknown` or proper types
