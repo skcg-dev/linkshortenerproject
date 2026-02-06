@@ -1,3 +1,7 @@
+---
+description: Read this file before implemnting or modifying authentication in the project.
+---
+
 # Authentication Guidelines
 
 ## Overview

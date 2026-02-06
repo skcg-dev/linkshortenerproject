@@ -14,6 +14,9 @@ export const links = pgTable(
     userId: varchar({ length: 255 }).notNull(),
     slug: varchar({ length: 12 }).notNull().unique(),
     url: text().notNull(),
+    clickCount: integer().notNull().default(0),
+    maxClicks: integer(),
+    expiresAt: timestamp({ mode: "date", withTimezone: true }),
     createdAt: timestamp({ mode: "date", withTimezone: true })
       .defaultNow()
       .notNull(),

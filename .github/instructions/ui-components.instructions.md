@@ -1,3 +1,7 @@
+---
+description: Read this before creating or modifying UI components in the project.
+---
+
 # UI Components Guidelines
 
 This document outlines the UI component standards for this Next.js link shortener application.

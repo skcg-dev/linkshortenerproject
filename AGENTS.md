@@ -13,19 +13,6 @@ This is a **Next.js 16** link shortener application built with:
 - **UI Components**: Custom components with shadcn/ui patterns
 - **State Management**: React 19 with Server Components
 
-## ⚠️ CRITICAL: Read Documentation First
-
-**BEFORE GENERATING ANY CODE, YOU MUST READ THE RELEVANT DOCUMENTATION FILES IN THE `/docs` DIRECTORY.**
-
-This is not optional. Each documentation file contains essential patterns, conventions, and implementation details that MUST be followed. Skipping this step will result in code that doesn't match project standards.
-
-### Required Reading by Feature:
-
-- **Authentication**: `/docs/authentication.md` - MUST read before implementing ANY authentication, protected routes, or user-related features
-- **UI Components**: `/docs/ui-components.md` - MUST read before using or creating ANY UI components
-
-**Workflow**: Read relevant docs → Understand patterns → Generate code following those patterns
-
 ## Core Principles
 
 ### ⚠️ IMPORTANT: Routing & Middleware
@@ -232,7 +219,6 @@ export async function getLinkBySlug(slug: string) {
 3. **Type Everything**: Ensure all new code is properly typed
 4. **Test Locally**: Verify changes work as expected
 5. **Consider Impact**: Think about performance and security implications
-6. **Update Docs**: Update relevant documentation if needed
 
 ## Getting Help
 
